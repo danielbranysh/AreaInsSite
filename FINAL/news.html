@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width">
+	<meta name="author" content="Daniel Branysh">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<title>
+		Area Insurance || Quote
+	</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/5fe1c95d28.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id = "branding">
+				<h1> <span class = "highlight">Area</span> Insurance <span class = "highlight"> LLC </span>
+				</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html"><i class="fas fa-h-square"></i> &#9;Home</a></li>
+					<li><a href="story.html"><i class="fas fa-history"></i> &#9;Our Story</a></li>
+					<li><a href="quote.html"><i class="fas fa-quote-right"></i> &#9;Get a Quote!</a></li>
+					<li class="current"><a href="news.html"><i class="far fa-newspaper"></i> &#9;Join our Newsletter!</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+	<h2 class="dark">Join our Mailing List
+			Stay in touch with the latest events, news and offers at Area Insurance Services.
+			To join our mailing list, please insert your e-mail address below. Submit your request by clicking the finish button. Your information will not be sold or distributed to any unrelated third party companies.
+</h2>
+	
+	
+	
+	<section id="news">
+
+		<form action="/action_page.php">
+  			<label for="fname"><b>First name:</b></label>
+  			<br>
+
+  			<span class="req"><i>Required</i></span><br>
+  				<input type="text" id="fname" name="fname"><br>
+
+ 			 <label for="lname">Last name:</label>
+ 			 <br>
+ 			 <span class="req"><p><i>Required</i></p></span>
+ 				 <input type="text" id="lname" name="lname"><br>
+
+ 			
+  			
+        
+        <div class="info">
+          <input type="Email" name="name" placeholder="Email"> <br>
+         
+        </div>
+        <p>Message</p>
+        <div>
+          <textarea rows="4"></textarea>
+        </div>
+        <button type="submit" href="/">Submit</button>
+      </form>
+      <br>
+
+
+  	<aside id="date"> <script>
+  		var monthNames = [ "January", "February", "March", "April", "May", "June",
+    						"July", "August", "September", "October", "November", "December" ];
+
+		var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+		var newDate = new Date();
+
+		newDate.setDate(newDate.getDate());    
+
+		$('#date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+
+  	</script>
+  	</aside>		
+	
+	</section>
+	<br>
+
+<footer>
+	<p>
+		Area Insurance LLC, Copyright &copy; 2020
+	</p>
+	<div>
+		
+
+			<script>	
+			$(document).ready(function(){
+
+			$("footer div").html("This page was last modified on: " + document.lastModified);
+
+
+			});
+			</script>
+		
+
+
+	</div>
+</footer>
+</body>
+</html>

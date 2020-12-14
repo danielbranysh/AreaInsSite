@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width">
+	<meta name="author" content="Daniel Branysh">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script src="https://kit.fontawesome.com/5fe1c95d28.js" crossorigin="anonymous"></script>
+
+	<title>
+		Area Insurance || Welcome
+	</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+
+	
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id = "branding">
+				<h1> <span class = "highlight">Area</span> Insurance <span class = "highlight">LLC</span>
+				</h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html"><i class="fas fa-h-square"></i> &#9;Home</a></li>
+					<li><a href="story.html"><i class="fas fa-history"></i> &#9;Our Story</a></li>
+					<li><a href="quote.html"><i class="fas fa-quote-right"></i> &#9;Get a Quote!</a></li>
+					<li><a href="news.html"><i class="far fa-newspaper"></i> &#9;Join our Newsletter!</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+	<section id = "showcase">
+		<div class= "container">
+			<h1>
+				Call - Compare - Save
+			</h1>
+			<p>
+				Call, Compare, & Save!
+				We represent dozens of trusted insurance companies so that we can help you find the lowest rate for your Auto, Home, and Business insurance needs.  We have served the Midland/Odessa region of West Texas for over 30 years as an independent insurance agent.  As an independent insurance agent we are able to compare coverage and price among the many companies we represent to help you obtain the best insurance for your needs at the lowest price! 
+			</p>
+		</div>
+	</section>
+	<section id="contact">
+		<div class="container">
+			<h1>
+				Let Us Contact You Today!
+			</h1>
+			<form action="process.php" method="post">
+				<input type="email" placeholder="Enter E-mail...">
+				<button type="submit" class="button1">Subscribe</button>
+			</form>
+		</div>
+	</section>
+	<section id="boxes">
+		<div class="container">
+
+			<div class="box">
+
+			<div id="one"><img src="car.jpg" alt="Automobile">Click here to learn more<p id= "ee">
+			<b>	Why do you need auto insurance? </b> <br><br>
+
+			It's really all about protecting yourself financially.
+
+			If you're in an accident or your car is stolen, it costs money, often a lot of money, to fix or replace it.
+			If you or any passengers are injured in an accident, medical costs can be extremely expensive.
+			If you or your car is responsible for damage or injury to others, you may be sued for much more than you're worth.
+			Not only is having insurance a prudent financial decision, many states require you to have at least some coverage. 
+		</p>
+		</div>
+			<h3>Automobile</h3>	
+				<p>Auto insurance protects you against financial loss if you have an accident. It is a contract between you and the insurance company. You agree to pay the premium and the insurance company agrees to pay your losses as defined in your policy.</p>
+			
+			
+		</div>
+
+			<div class="box">
+				
+			<div id="two"><img src="home.jpg" alt="Homeowners" >Click here to learn more<p id="ff">
+				<b>Why do you need homeowners insurance? </b> <br> <br>
+
+					It is really all about protecting yourself financially if something unexpected happens to your home or possessions. That's important because chances are your home is likely one of your largest investments.
+
+					If your home was destroyed by fire or damaged by a natural disaster, you'd need money to repair or replace it.
+					If a guest in your home is injured, liability protection and medical coverage help pay expenses.
+					If you are a victim of theft and vandalism, it can reimburse you for your loss or pay for repairs.
+					If you are still paying for your home, your lender will require insurance.
+				
+			</p></div>
+			<h3>Home</h3>
+				<p>Homeowners insurance is a package policy. This means that it covers both damage to your property and your liability or legal responsibility for any injuries and property damage you or members of your family cause to other people. This includes damage caused by household pets.</p>	
+			
+			</div>
+
+			<div class="box">
+			<div id="three"><img src="commercial.jpg" alt="Business">Click here to learn more<p id="gg">
+				<b>Do I need workers compensation insurance? </b> <br><br>
+
+				Employers have a legal responsibility to their employees to make the workplace safe. However, accidents happen even when every reasonable safety measure has been taken.
+
+				To protect employers from lawsuits resulting from workplace accidents and to provide medical care and compensation for lost income to employees hurt in workplace accidents, in almost every state, businesses are required to buy workers compensation insurance. Workers compensation insurance covers workers injured on the job, whether they're hurt on the workplace premises or elsewhere, or in auto accidents while on business. It also covers work-related illnesses.
+
+
+			</p></div>
+
+			<h3>Commercial</h3>	
+				<p>As a business owner, you need the same kinds of insurance coverages for the car you use in your business as you do for a car used for personal travel -- liability, collision and comprehensive, medical payments (known as personal injury protection in some states) and coverage for uninsured motorists. In fact, many business people use the same vehicle for both business and pleasure. 
+			</div>
+	
+
+		</div>
+	</section>
+
+<footer>
+	<p>
+		Area Insurance LLC, Copyright &copy; 2020
+	</p>
+	<div>
+		
+
+			<script>	
+			$(document).ready(function(){
+
+			$("footer div").html("This page was last modified on: " + document.lastModified);
+
+			$("#ee").hide();
+			$("#one").click(function(){
+				$("#ee").animate({
+					
+					height: 'toggle'
+				});
+			});
+
+			$("#ff").hide();
+			$("#two").click(function(){
+				$("#ff").animate({
+					height: 'toggle'
+				});
+			});
+
+
+			$("#gg").hide();
+			$("#three").click(function(){
+				$("#gg").animate({
+					height: 'toggle'
+				});
+			});
+
+
+
+			 });
+			</script>
+
+
+	</div>
+	
+</footer>
+</body>
+</html>

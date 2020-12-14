@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Daniel Branysh">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<title>
+		Area Insurance || Our Story
+	</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+
+	<script src="https://kit.fontawesome.com/5fe1c95d28.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id = "branding">
+				<h1> <span class = "highlight">Area</span> Insurance
+				</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html"><i class="fas fa-h-square"></i> &#9;Home</a></li>
+					<li class="current"><a href="story.html"><i class="fas fa-history"></i> &#9;Our Story</a></li>
+					<li><a href="quote.html"><i class="fas fa-quote-right"></i> &#9;Get a Quote!</a></li>
+					<li><a href="news.html"><i class="far fa-newspaper"></i> &#9;Join our Newsletter!</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+	
+	<section id="contact">
+		<div class="container">
+			<h1>
+				Let Us Contact You Today!
+			</h1>
+			<form action="process.php" method="post">
+				<input type="email" placeholder="Enter E-mail...">
+				<button type="submit" class="button1">Subscribe</button>
+			</form>
+		</div>
+	</section>
+	<section id="main">
+		<div class="container">
+			<article id="mainCol">
+			<h1 class = "title1">
+				Our Story
+			</h1> 
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p class="dark">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+		</article>
+
+		<aside id="sidebar">
+			<div class="dark">
+			<h3>Our Commitment!</h3>
+			<p>We are an independent agent with the customer in mind.  We represent dozens of insurance companies, to help you find the best insurance for your needs at the lowest price.  Please call us for a fast & friendly quote today!</p>
+			</div>
+		</aside>
+			
+		</div>
+	</section>
+	<br>
+	<br>
+	<h2 class="dark">We are located at: &#9;&#9;1302 N. Big Spring St.
+		Midland, TX 79701 </h2>
+	<div id="map">
+
+		<script>
+			function initMap(){
+				var local = {lat: 32.010250, lng:-102.078540 };
+				var map = new google.maps.Map(
+					document.getElementById('map'), {zoom: 19, center: local});
+				var marker = new google.maps.Marker({position: local, map: map});
+			}
+		</script>
+		<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdkj3v3tI2LyPGGUDhSTbU66ItTT9K4bE&callback=initMap"></script>
+
+		
+	</div>
+<footer>
+	<p>
+		<div>
+		Area Insurance LLC, Copyright &copy; 2020 <br>
+		AREA INSURANCE SERVICES, INC. <br>
+		1302 N. Big Spring St. <br>
+		Midland, TX 79701 <br>
+		9:00am to 5:30pm M-F <br>
+		
+   <a id = "mobile" href="tel:(432) 570-4373 "> (432) 570-4373 </a>
+    <span id = "desktop"> (432) 570-4373 </span>
+   </div>
+	</p>
+	
+</footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width">
+	<meta name="author" content="Daniel Branysh">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<title>
+		Area Insurance || Quote
+	</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/5fe1c95d28.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id = "branding">
+				<h1> <span class = "highlight">Area</span> Insurance <span class = "highlight"> LLC </span>
+				</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html"><i class="fas fa-h-square"></i> &#9;Home</a></li>
+					<li><a href="story.html"><i class="fas fa-history"></i> &#9;Our Story</a></li>
+					<li class="current"><a href="quote.html"><i class="fas fa-quote-right"></i> &#9;Get a Quote!</a></li>
+					<li><a href="news.html"><i class="far fa-newspaper"></i> &#9;Join our Newsletter!</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+	
+	<section id="quote">
+
+		<form action="/action_page.php">
+  			<label for="fname">First name:</label>
+  				<input type="text" id="fname" name="fname"><br><br>
+ 			 <label for="lname">Last name:</label>
+ 				 <input type="text" id="lname" name="lname"><br><br>
+
+ 			 <div id="gen">
+ 			 	<input type="radio" id="male" name="gender" value="male">
+  			<label for="male">Male</label><br>
+  				<input type="radio" id="female" name="gender" value="female">
+  			<label for="female">Female</label><br>
+ 				 <input type="radio" id="other" name="gender" value="other">
+  			<label for="other">Other</label> <br> <br>
+        
+        <div class="info">
+          <input type="Email" name="name" placeholder="Email"> <br>
+          <input type="tel" name="name" placeholder="Phone number"> <br>
+          <input type="text" name="name" placeholder="Website"> <br>
+        </div>
+        <p>Message</p>
+        <div>
+          <textarea rows="4"></textarea>
+        </div>
+        <button type="submit" href="/">Submit</button>
+      </form>
+  			
+	
+	</section>
+
+<footer>
+	<p>
+		Area Insurance LLC, Copyright &copy; 2020
+	</p>
+	<div>
+		
+
+			<script>	
+			$(document).ready(function(){
+
+			$("footer div").html("This page was last modified on: " + document.lastModified);
+
+
+			});
+			</script>
+		
+
+
+	</div>
+</footer>
+</body>
+</html>
